@@ -1,0 +1,7 @@
+
+action=createq
+limit=member/cs_com/1
+optionbar=admin
+do=create
+template=quick.form
+dotitle=Quick Query
