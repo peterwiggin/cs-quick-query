@@ -1,0 +1,130 @@
+
+<table border="0" bgcolor="#f0f0f0">
+
+<tr>
+<td colspan="2">
+<b>Query Title</b><br />
+<csinputfield name="title" size="50">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Description</b><br />
+<csinputfield name="description" rows="4" cols="60" wrap="yes">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Public Reference</b><br />
+<csinputfield name="ref" size="40">
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Related Community</b><br />
+<csinputfield name="comm">
+</td>
+
+<td>
+<b>Layout</b><br />
+<csinputfield name="cs_lay">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Query Table</b><br />
+Enter the system table name ( eg d for documents )<br />
+<csinputfield name="q_table">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Additional Query Tables</b><br />
+Enter any additional table names ( leave blank if unsure )<br />
+<csinputfield name="q_table2">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Select</b><br />
+Enter the fields you wish to select separated by commas ( eg firstname,lastname,email )<br />
+<csinputfield name="q_select" rows="5" cols="60" wrap="yes" default="*">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Where</b><br />
+Enter an SQL WHERE clause. ( eg firstname like 'pete%'  or  state = 'CA' )<br />
+<csinputfield name="q_where" rows="5" cols="60" wrap="yes">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>List Header</b><br />
+This will display at the top of the list.  Useful for defining start TABLE tags.<br />
+<csinputfield name="header" rows="5" cols="60" wrap="yes" default='<csperl file="q/list_header">' />
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>List Template</b><br />
+Parsed template text to display each list item.<br />
+<csinputfield name="template" rows="25" cols="60" wrap="yes" default='<csperl file="q/list_template">' />
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>List Footer</b><br />
+<csinputfield name="footer" rows="5" cols="60" wrap="yes" default='<csperl file="q/list_footer">' />
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>List Length</b><br />
+<csinputfield name="listlength" default="1000">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Order by</b><br />
+<csinputfield name="q_order">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Group By</b><br />
+<csinputfield name="q_groupby">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Raw SQL</b><br />
+<csinputfield name="q_raw">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<b>Not Found Message</b><br />
+<csinputfield name="notfound_text" default="No Results Found" />
+</td>
+</tr>
+
+
+</table>
+
+<csformbuttons>
